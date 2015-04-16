@@ -18,9 +18,9 @@ function respond() {
   } 
   else if(request.text && botRegexJew.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i295.photobucket.com/albums/mm152/GuitarDude215/stereotype-jew.gif");
+    postMessage("http://i.groupme.com/307x362.gif.357292f527ad49a38da4e13201fbfa77.large");
     this.res.end();
-  }
+  } 
 }
 
 function postMessage() {
