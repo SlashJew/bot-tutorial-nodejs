@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy$/;
+      botRegex = /^\/cool guy$/; botRegexJew = /^\/jew/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -14,6 +14,11 @@ function respond() {
   } else {
     console.log("don't care");
     this.res.writeHead(200);
+    this.res.end();
+  } 
+  else if(request.text && botRegexJew.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i295.photobucket.com/albums/mm152/GuitarDude215/stereotype-jew.gif");
     this.res.end();
   }
 }
