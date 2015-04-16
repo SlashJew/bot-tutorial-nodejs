@@ -24,50 +24,50 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/q3ohLtD.gif");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.kno.com/images/store/knoadvance/overview.png");
+    postMessage("");
     this.res.end();
   }
   else if(request.text && botRegexBan.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.returnofkings.com/wp-content/uploads/2014/03/ban.jpg");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botRegexShrug.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("¯\\\_(ツ)_/¯");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/ma32/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/ma32/players?name="+rep+"&position=all&team=all");
+    postMessage("");
     this.res.end();
   } 
 
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
+    postMessage(""+request.text.substring(8,request.text.length));
     this.res.end();
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddenall32");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botRegexLab.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.cornelllab.com/images/70.jpg");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botRegexJew.test(request.text)) {
