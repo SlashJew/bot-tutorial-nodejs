@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexBan = /^\/ban/
       botRegexAd=/^\/advance/;botRegexShrug = /^\/shrug/; botRegexSC = /^\/SDL/i;
       botRegexP = /^\/PDL/i;  botRegexDg = /^\/doge/i; botRegexCjw = /^\/JEW/; botRegexJw = /^\/Jew/;
-      botRegexJew = /^\/jew/;
+      botRegexJew = /^\/jew/; botRegexJoo = /^\/joo/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -74,6 +74,10 @@ function respond() {
     postMessage("http://i.groupme.com/307x362.gif.357292f527ad49a38da4e13201fbfa77.large");
     this.res.end();
   }
+  else if(request.text && botRegexJoo.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.groupme.com/720x526.jpeg.87c35e3533ee4c8a99d49a3cd8390c29.large");
+    this.res.end();
   else {
     console.log("don't care");
     this.res.writeHead(200);
