@@ -78,6 +78,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://i.groupme.com/720x526.jpeg.87c35e3533ee4c8a99d49a3cd8390c29.large");
     this.res.end();
+  }
   else {
     console.log("don't care");
     this.res.writeHead(200);
